@@ -1,0 +1,87 @@
+#breakLength {
+    float: left;
+}
+p{
+margin-top:300px;
+font-style:italic;
+}
+
+#sessionLength {
+    float: right;
+}
+#timer{
+   color: #7E0B7E;
+   margin: -90px 0px 0px 1px;
+   position: relative;
+   font-weight: bold;
+   font-size: 1.5em;
+   text-align: center;
+} 
+#amin {
+  color: #7E0B7E;
+   margin: 100px 0px 0px 22px;
+   position: relative;
+   font-weight: bold;
+   font-size: 1.5em;
+   text-align: center;
+}
+#playOrPause{
+   text-align:center;
+   padding: 20px;
+   font-weight: bold;
+   color: #480A8F;
+   border-radius: 50px;
+   position:relative;
+}
+
+
+#banner {
+border-radius: 50%;
+width: 150px;
+height: 150px;
+background: #000;
+overflow: hidden;
+backface-visibility: hidden;
+transform: translate3d(0, 0, 0);
+margin: 0 auto;
+z-index:-10;
+position: relative;
+
+}
+#banner .fill {
+animation-name: fillAction;
+animation-iteration-count: infinite;
+animation-timing-function: cubic-bezier(.2, .6, .8, .4);
+animation-fill-mode: forwards;
+
+
+}
+#banner #waveShape {
+animation-name: waveAction;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-duration: 0.5s;
+width:300px;
+height: 150px;
+fill: #04ACFF;
+
+}
+@keyframes fillAction {
+0% {
+    transform: translate(0, 150px);
+}
+100% {
+    transform: translate(0, -5px);
+}
+}
+@keyframes waveAction {
+0% {
+    transform: translate(-150px, 0);
+}
+100% {
+    transform: translate(0, 0);
+}
+}
+
+
+
